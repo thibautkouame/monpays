@@ -1,0 +1,88 @@
+<ion-content class="ion-padding">
+  <div class="userRef">
+    <div class="greeting">
+      <h4>Hello, <br>
+       <h3>UserName.</h3>
+      </h4>
+    </div>
+    <div class="userIcon">
+      <img src="../../assets/images/userIcon.png" alt="" srcset="">
+    </div>
+  </div>
+
+  <div class="inputAfterUserref ">
+    <p>Voir d'autres options </p>
+    <div class="btnPopController">
+      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="card_afteruserRef ion-padding">
+      <div class="cardInfoLeft">
+        <p>Que voulez-vous apprendre aujourd'hui ?</p>
+        <ion-button (click)="startLearn()" expand="block" class="btnGet">
+          Aller <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div class="cardInfoRight">
+        <img src="../../assets/images/WantToLearnQuestion.png" alt="" srcset="">
+      </div>
+    </div>
+  
+    <div class="RandomEthnie_a_Apprendre">
+      <h4 class="ContenuText">Contenu,</h4>
+      <ion-list class="listClass">
+        <ion-item lines="none" class="Listcard card1">
+          <ion-avatar slot="start">
+            <img src="../../assets/images/Man thinking.gif" />
+          </ion-avatar>
+          <ion-label (click)="rdmCultreGen()">
+            <h2 class="textH2">Le Saviez-vous ?</h2>
+            <h5>Apprenez aléatoirement une <br> expression <br> 
+              ou sur une histoire sur un peuple.</h5>
+            <p>Cliquez.</p>
+          </ion-label>
+          
+        </ion-item>
+        <ion-item lines="none" class="Listcard card2">
+          <ion-avatar slot="start">
+            <img src="../../assets/images/Social Growth-rafiki.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2 class="textH2">Rejoignez-nous</h2>
+            <h5>Une communauté inter-active <br>
+             toujours disponible.</h5>
+            <p>Cliqué pour rejoindre.</p>
+          </ion-label>
+          
+        </ion-item>
+        <ion-item lines="none" class="Listcard card3">
+          <ion-avatar slot="start">
+            <img src="../../assets/images/ci.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2 class="textH2">Mon chère pays</h2>
+            <h5>Salut Ô terre d’espérance!<br>
+                Pays de l’hospitalité, Tes légions <br> remplies de vaillance.</h5>
+            <p>Apprenez plus sur la Cote d'ivoire.</p>
+          </ion-label>
+         
+        </ion-item>
+        <ion-item lines="none" class="Listcard card4">
+          <ion-avatar slot="start">
+            <img src="../../assets/images/peuple.jpg" />
+          </ion-avatar>
+          <ion-label>
+            <h2 class="textH2">Histoire</h2>
+            <h5>Apprenez plus sur les differents <br> peuples Ivoirien.</h5>
+            <p>Cliqué pour en savoir plus</p>
+          </ion-label>
+          
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+ 
+
+</ion-content>

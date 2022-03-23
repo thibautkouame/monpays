@@ -1,0 +1,249 @@
+/*couleurs
+#F4730B, 
+fill:#BA68C8
+rgb(245, 245, 245);
+#ff8828f1
+rgba(255, 0, 0, 0.288)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins&family=Syne+Mono&display=swap');
+
+
+ion-content{
+    --background: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.userRef{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    color: rgb(197, 197, 197);
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+.userIcon{
+    margin-right: 0;
+    background-color: rgb(245, 245, 245);;
+    position: absolute;
+    width: 14%;
+    right: 2%;
+    top: 3%;
+    border-radius: 28px;
+}
+
+.greeting{
+    width: 40%;
+}
+
+.greeting h3{
+   margin-top: -.3px;
+   color:#ff8928;
+   line-height: 30px;
+   border-bottom: 1px solid green;
+}
+
+
+.cardInfoLeft p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputAfterUserref{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 9%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid rgb(233, 233, 233);  
+}
+
+.inputAfterUserref ion-icon{
+    color: rgb(197, 197, 197);
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+
+.inputAfterUserref p{
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.ContenuText{
+    color: rgb(197, 197, 197);
+    padding-left: 3%;
+}
+
+.card_afteruserRef{
+    background-color:rgb(245, 245, 245);
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    top: 1%;
+    overflow-x: hidden;
+    border: 1px solid rgb(233, 233, 233); 
+    animation: card_afteruserRef_anim 1.7s  ease-in-out;
+    transform: translateX(0px);
+}
+
+
+@keyframes card_afteruserRef_anim{
+    0%{
+        transition: 1s;
+        transform: translateX(100px);
+    }
+}
+
+
+@keyframes yo{
+    100%{
+        visibility: visible;
+    }
+}
+
+.card_afteruserRef p{
+    font-size: 17px;
+    color: rgb(209, 209, 209);
+    animation-name: card_afteruserRef_anim;
+    animation: yo 300ms;
+}
+
+
+ion-button{
+    --background: white;
+    color: #F4730B;
+    --border-radius: 10px;
+    --border : 10px solid rgba(255, 0, 0, 0.288);
+}
+.btnGet{
+    border-radius: 90px;
+    width: 110px;
+    height: 49px;
+    margin-top: 34px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.RandomEthnie_a_Apprendre{
+    margin-top: 24px;
+}
+
+.ListAllcard{
+    background: white;
+}
+
+ion-item {
+    --background : rgb(255, 255, 255);
+}
+
+.listClass{
+    background: rgb(255, 255, 255);
+}
+
+.Listcard{
+    --background: rgba(255, 255, 255, 0);
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card1{
+    background-color: #ff8928;
+    border-radius: 20px;
+    animation: card1_animation 1.7s ease-in-out;
+}
+
+@keyframes card1_animation {
+    0%{
+        transform: translateY(400px);
+    }
+}
+
+.card1 h2, .card2 h2, .card3 h2, .card4 h2{
+    padding-bottom: 7px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.card2 h2, .card4 h2, .card3 h2{
+    color: #F4730B;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.card1 h2{
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+}
+
+
+.card1 h5{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card2 h5, .card4 h5, .card3 h5{
+    color: rgb(197, 197, 197);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;;
+}
+
+ion-label p{
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
+.card2{
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border-bottom: 0px solid white;
+    border: 1px solid rgb(233, 233, 233);
+    animation: card2_cad3_card_4_animtion 1.7s ease-in-out;
+}
+
+
+
+@keyframes card2_cad3_card_4_animtion {
+    0%{
+        transform: translateY(700px);
+    }
+}
+
+
+.card4 , .card3{
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border: 1px solid rgb(233, 233, 233);
+    animation: card2_cad3_card_4_animtion 1.7s ease-in-out;
+}
+
+.NberSurCote{
+    background-color: red;
+    border-radius: 20px;
+    color : white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    opacity: .7;
+}
+
+.textH2{
+    color: white;
+    font-weight: bold;
+    opacity: .8;
+}
+
+

@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>menuAcc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding center" *ngFor="let item of Notifications">
+  <h2>Le Saviez Vous ? <br> En :</h2>
+  <h1>{{item.nomEtnie}}</h1>
+  <h1>{{item.textMontrer}}</h1>
+  <h1>Sedit : {{item.SeDit}}</h1>
+</ion-content>

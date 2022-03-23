@@ -1,0 +1,35 @@
+
+
+ion-tabs, ion-content, ion-tab-button{
+    background-color: white;
+    --background : white;
+}
+
+ion-tab-bar{
+    --background: rgb(245, 245, 245);;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;  
+}
+
+ion-icon{
+    font-size: 40px;
+    color: rgb(197, 197, 197);
+}
+
+.accTab{
+    height: 70px;
+    width: 70px;
+}
+
+.accTab ion-icon{
+    border-radius: 130px;
+    background-color: #ff8928;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+ion-label{
+    color: rgb(197, 197, 197);
+    font-weight: bold;
+}
