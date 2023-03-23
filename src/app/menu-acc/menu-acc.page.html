@@ -1,12 +1,69 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>menuAcc</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <div class="haut">
+    <p>Quel <br>
+        Etnhiqes ?
+    </p>
+      <div class="drapeau">
+        <div class="orange"></div>
+        <div class="blanc"></div>
+        <div class="vert"></div>
+      </div>
+  </div>
 
-<ion-content class="ion-padding center" *ngFor="let item of Notifications">
-  <h2>Le Saviez Vous ? <br> En :</h2>
-  <h1>{{item.nomEtnie}}</h1>
-  <h1>{{item.textMontrer}}</h1>
-  <h1>Sedit : {{item.SeDit}}</h1>
+  <h3>Top Ehnies en CI</h3>
+  <div class="slide_topEthnies">
+    <ul>
+      <li>Ag</li>
+      <li>Ba</li>
+      <li>Di</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+  </div>
+
+  <ion-searchbar placeholder="Filter Pizza" inputmode="decimal" type="decimal" (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="always"></ion-searchbar>
+
 </ion-content>

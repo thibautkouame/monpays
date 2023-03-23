@@ -1,0 +1,43 @@
+<ion-content class="ion-padding">
+  <div class="haut_top">
+    <div class="haut">
+      <p>Quel <br>
+          Etnhies ?
+      </p>
+        <div class="drapeau">
+          <div class="orange"></div>
+          <div class="blanc"></div>
+          <div class="vert"></div>
+        </div>
+    </div>
+
+    <h3>Top Ehnies de C.I</h3>
+    <div class="slide_topEthnies">
+      <ul>
+        <li>Baoulé</li>
+        <li>Malinké</li>
+        <li>Yacouba</li>
+        <li>Agni</li>
+        <li>Bété</li>
+        <li>Gouro</li>
+        <li>Senoufo</li>
+        <li>Attié</li>
+        <li>Wobè</li>
+        <li>Abidji</li>
+      </ul>
+    </div>
+  </div>
+    
+  
+    <ion-searchbar (ionInput)="FilterJSONData($event)" class="search_bar" placeholder="Tapez ici"></ion-searchbar>
+
+  <div class="liste_allEtnhies">
+  <ion-list *ngFor="let item of jsonData">
+    <ion-item  lines="none" class="item" (click)="optionsCours(item)">
+      <p>{{item.ethnie}}</p>
+    </ion-item>
+  </ion-list>
+</div>
+
+  
+  </ion-content>

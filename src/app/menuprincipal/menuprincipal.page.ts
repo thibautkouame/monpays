@@ -1,4 +1,5 @@
 import { Component, OnInit,} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menuprincipal',
@@ -8,7 +9,7 @@ import { Component, OnInit,} from '@angular/core';
 export class MenuprincipalPage implements OnInit {
   liens : any[];
 
-  constructor() { 
+  constructor(public router : Router) { 
     this.liens = [
       {nom : 'kouame' , rand : this.rdm()},
       {nom : 'bosson' , rand : this.rdm()},

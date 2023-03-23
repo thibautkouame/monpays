@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Syne+Mono&display=swap');
+
+ion-content, ion-list, ion-item{
+    --background:white;
+}
+
+ion-item, ion-list{
+    padding: 0px;
+}
+
+.haut_top{
+    background-color:rgb(245, 245, 245);
+    border: 1px solid rgb(233, 233, 233); 
+    height: 24%;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.haut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.haut p, h3{
+    color: rgb(197, 197, 197);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+h3{
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.drapeau{
+    display: flex;
+}
+
+.drapeau .orange{
+    width: 20px;
+    height: 24px;
+    background-color: orange;
+}
+
+.drapeau .blanc{
+    width: 20px;
+    height: 24px;
+    background-color: white;
+}
+
+.drapeau .vert{
+    width: 20px;
+    height: 24px;
+    background-color: green;
+}
+
+.slide_topEthnies ul{
+    display: flex;
+    margin: 0;
+    padding-left: -90px;
+}
+
+.slide_topEthnies ul{
+    font-size: 40px;
+    height: 60px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    padding: 10px;
+    margin-top: 0px;
+    justify-items: center;
+    position: relative;
+}
+
+.slide_topEthnies ul li{
+    border-radius: 30px;
+    list-style: none;
+    padding: 12px; 
+    background-color:#ff8928;
+    justify-content: space-between;
+    margin: 1%;
+    font-size: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+ion-item {
+    --font-family: 'Poppins', sans-serif;
+    --background: white;
+}
+
+ion-searchbar{
+    --border-radius: 10px;
+    --background:rgb(255, 254, 254);
+}
+
+.liste_allEtnhies p{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: rgb(197, 197, 197);
+    font-size: 17px;
+}
+
+

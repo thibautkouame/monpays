@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>optionscours</ion-title> -->
+    <div class="toolbar">
+      <!-- <ion-icon name="arrow-back-outline" ></ion-icon> -->
+      <ion-icon name="arrow-back-outline" (click)="retouraumenuPrin()"></ion-icon><h5 class="namePays" >MonpaYs</h5>
+    <img src="assets/images/cote-d-ivoire_drapeau.png" alt="">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="topItem ion-padding" >
+    <p>{{courActif.motBienvenu}} !<br> 
+       dans le cour pour <br> apprendre
+         <em>{{courActif.ethnie}}</em>
+      </p>
+      <ion-icon name="language-outline"></ion-icon>
+  </div>
+
+  <div class="coursContent ion-padding">
+    <ion-list class="listClass">
+      <ion-item lines="none" class="Listcard card1">
+        <ion-label (click)="rdmCultreGen()">
+          <h2 class="textH2">Voyage en pays {{courActif.ethnie}}</h2>
+          <h5>Connaitre de façon general un peuple avant  <br> votre visite sur ces terres vous donnera un <br> certain avantage du territoire</h5>
+        </ion-label>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3" routerLink="{{courActif.lienSalut}}">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Salutation</h2>
+          <h5>{{courActif.description}}</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Presentation</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">D'ou venez-vous ?</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Se renseigner</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Presentation</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Presentation</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Presentation</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Demander un lieu</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="Listcard card3">
+        <ion-avatar slot="start">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2 class="textH2">Salutation</h2>
+          <h5>Agni oo</h5>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <div class="ajouterNote">
+      <ion-icon slot="start" name="add" (click)="onClick()"></ion-icon>
+    </div>
+  </div>
+</ion-content>

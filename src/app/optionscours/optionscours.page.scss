@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Syne+Mono&display=swap');
+
+ion-content{
+    --background: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+ion-toolbar{
+    --background: white;
+}
+
+.toolbar{
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   padding-inline-end : 14px;
+   padding-inline-start : 14px;
+}
+em{
+    text-decoration: none;
+    text-transform: none;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    color: green;
+
+}
+
+.toolbar img{
+    width: 40px;
+    height: 40px;
+ }
+
+ .namePays{
+     color: #F4730B;
+     font-family: 'Varela Round', sans-serif;
+     font-weight: bold;
+ }
+
+ .toolbar ion-icon{
+    width: 27px;
+    height: 27px;
+    color: #F4730B;
+    
+ }
+
+ .topItem{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: -22px;
+ }
+
+ .topItem p{
+  color: rgb(197, 197, 197);
+  font-size: 19px;
+ }
+
+ .topItem ion-icon{
+    height: 30px;
+    width: 30px;
+    color:#F4730B;
+ }
+
+ .coursContent{
+     margin-top: -30px;
+ }
+
+ .listClass{
+    background: rgb(255, 255, 255);
+}
+
+.Listcard{
+    --background: rgba(255, 255, 255, 0);
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card1{
+    background-color: #ff8928;
+    border-radius: 20px;
+    animation: card1_animation 1.7s ease-in-out;
+    height: 100px;
+}
+
+@keyframes card1_animation {
+    0%{
+        transform: translateY(400px);
+    }
+}
+
+.card1 h2, .card2 h2, .card3 h2, .card4 h2{
+    padding-bottom: 7px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.card2 h2, .card4 h2, .card3 h2{
+    color: #F4730B;
+    font-size: 14px;
+    font-weight:400
+}
+
+
+
+.card1 h2{
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+}
+
+
+.card1 h5{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card2 h5, .card4 h5, .card3 h5{
+    color: rgb(197, 197, 197);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.card1 h5{
+    font-size: 12px;
+}
+
+.card1 ion-icon{
+    color: green;
+}
+
+ion-label p{
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
+.card2{
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border-bottom: 0px solid white;
+    border: 1px solid rgb(233, 233, 233);
+    animation: card2_cad3_card_4_animtion 1.7s ease-in-out;
+}
+
+
+
+@keyframes card2_cad3_card_4_animtion {
+    0%{
+        transform: translateY(700px);
+    }
+}
+
+
+.card4 , .card3{
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border: 1px solid rgb(233, 233, 233);
+    animation: card2_cad3_card_4_animtion 1.7s ease-in-out;
+}
+
+ion-avatar ion-icon{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: white;
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ajouterNote{
+    position: fixed;
+    bottom: 20px;
+    right: 14px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #F4730B;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+
+.ajouterNote ion-icon{
+    width: 50px;
+    height: 50px;
+    color:white;
+}
+

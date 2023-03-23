@@ -40,13 +40,17 @@ ion-content{
     width: 40%;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+}
+
 .greeting h3{
    margin-top: -.3px;
    color:#ff8928;
    line-height: 30px;
-   border-bottom: 1px solid green;
+   border-bottom: 2px solid green;
 }
-
 
 .cardInfoLeft p{
     color: white;

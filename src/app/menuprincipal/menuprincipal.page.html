@@ -2,18 +2,20 @@
   <ion-tabs>
 
     <ion-tab-bar slot="bottom">
-      <ion-tab-button (click)="onClick()">
-        <ion-icon name="grid-outline"></ion-icon>
-        <ion-label>Profile</ion-label>
+      <ion-tab-button (click)="onClick()" class="menuTab">
+        <ion-menu-button menu="main-menu" >
+          <ion-icon name="grid-outline"></ion-icon>
+        </ion-menu-button>
+        <ion-label>Menu</ion-label>
       </ion-tab-button>
   
       <ion-tab-button tab="accueil" class="accTab">
         <ion-icon name="planet-outline"></ion-icon>
       </ion-tab-button>
   
-      <ion-tab-button tab="parametre">
+      <ion-tab-button tab="parametre" class="SettingTab">
         <ion-icon name="settings-outline"></ion-icon>
-        <ion-label>Settings</ion-label>
+        <ion-label>Parametre</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   

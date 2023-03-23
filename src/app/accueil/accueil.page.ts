@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController, NavController, ToastController } from '@ionic/angular';
+import { AlertController, AlertOptions, NavController, Platform, ToastController } from '@ionic/angular';
 import { Alert } from 'selenium-webdriver';
 
+var name:string = "John"; 
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.page.html',
@@ -12,7 +13,6 @@ export class AccueilPage implements OnInit {
 
   comp = true;
   liens : any[];
-
   
 
 
@@ -26,11 +26,12 @@ export class AccueilPage implements OnInit {
       {id : 4, backgroundColor: "#111d90" , gpEthnique : 'Malinké', site : '../menu-acc', rand : this.randomGroupeEthnique(), topNumber : 1, color: "purple" },
     ];
      this.randomGroupeEthnique();
+     this.alertConnexion() ;
   }
 
 
 
-  GroupeEthnique = ["Agni : Originaire du Ghana ce peuple est divisé en 4 grand grooupe.", 
+  GroupeEthnique = ["Agni : Agni Agni Agni.", 
                     "En Baoulé, Merci se dit : Moo." ,
                     "Les Akans sont composé des baoulés"
                   ];
@@ -42,30 +43,52 @@ export class AccueilPage implements OnInit {
    }
 
   ngOnInit() {
-    console.log('hello');
+    console.log(name);
+   
   }
   
    async rdmCultreGen() {
      const alert = await this.alertController.create({
-       header: 'Le Saviez-vous ?',
+       header: 'Le saviez-vous ?',
        message: this.randomGroupeEthnique(),
        buttons: [
          {
            text: 'Ok',
            handler: () => {
              console.log('Confirm Okay');
-           }
-          
+           },
+           cssClass : "btnClass",
          }
        ],
        cssClass: "rdmCultreGenCss",
+       
      });
    
      await alert.present();
    }
 
+   async alertConnexion() {
+    const alert = await this.alertController.create({
+      header: 'Notification',
+      message: "Activé votre connexion internet 30s pour le téléchargement des méta donnéees",
+      buttons: [
+        {
+          text: 'Ok',
+          handler: () => {
+            console.log('Confirm Okay');
+          },
+          cssClass : "btnClass",
+        }
+      ],
+      cssClass: "rdmCultreGenCss",
+      
+    });
+  
+    await alert.present();
+  }
+
   startLearn(){
-    this.router.navigateByUrl('menu-acc')
+    this.router.navigateByUrl('choixethnies')
   }
 
 }

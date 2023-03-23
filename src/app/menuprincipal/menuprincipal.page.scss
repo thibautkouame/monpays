@@ -6,13 +6,14 @@ ion-tabs, ion-content, ion-tab-button{
 }
 
 ion-tab-bar{
-    --background: rgb(245, 245, 245);;
+    --background: rgb(245, 245, 245);
    border-top-left-radius: 20px;
-   border-top-right-radius: 20px;  
+   border-top-right-radius: 20px; 
+   border: 1px solid rgb(245, 245, 245); 
 }
 
 ion-icon{
-    font-size: 40px;
+    font-size: 37px;
     color: rgb(197, 197, 197);
 }
 
@@ -27,6 +28,16 @@ ion-icon{
     width: 30px;
     height: 30px;
     color: white;
+}
+
+.menuTab ion-icon{
+    width: 28px;
+    height: 28px;  
+}
+
+.SettingTab ion-icon{
+    width: 30px;
+    height: 30px; 
 }
 
 ion-label{

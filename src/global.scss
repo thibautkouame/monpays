@@ -47,7 +47,28 @@
 
 .rdmCultreGenCss{
     /*background: yellow;*/
-    --background: rgb(245, 245, 245);
-    --border-radius: 100px;
+    --background: rgb(255, 255, 255);
+    --color: red;
+
+    .btnClass{
+        color: #ff8928;
+        font-family: 'Poppins', sans-serif;
+    }
+    .alert-wrapper{
+        .alert-head{
+            h2{
+                color: #ff8928;
+                font-size: 17px;
+                font-family: 'Fredoka', sans-serif;  
+            }
+        }
+        .alert-message{
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        border: 1px solid rgb(233, 233, 233);
+        border-radius: 17px;
+    }
 }
 

@@ -32,6 +32,26 @@ const routes: Routes = [
     path: 'accueil',
     loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
   },
+  {
+    path: 'choixethnies',
+    loadChildren: () => import('./choixethnies/choixethnies.module').then( m => m.ChoixethniesPageModule)
+  },
+  {
+    path: 'optionscours',
+    loadChildren: () => import('./optionscours/optionscours.module').then( m => m.OptionscoursPageModule)
+  },
+  {
+    path: 'optionscours/:id',
+    loadChildren: () => import('./optionscours/optionscours.module').then( m => m.OptionscoursPageModule)
+  },
+  {
+    path: 'cours',
+    loadChildren: () => import('./cours/cours.module').then( m => m.CoursPageModule)
+  },
+  {
+    path: 'agnisalution',
+    loadChildren: () => import('./agnisalution/agnisalution.module').then( m => m.AgnisalutionPageModule)
+  },
 ];
 
 @NgModule({

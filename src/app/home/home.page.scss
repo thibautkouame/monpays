@@ -55,6 +55,7 @@ font-weight:900;
   color: #FF881E;
   animation: splash_logo_p_anim 4.1s ease-in-out;
   opacity: 1;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes splash_logo_p_anim {
@@ -95,7 +96,7 @@ animation: rondRight_anim 2s ease-in-out;
   width: 94px;
 height: 94px;
 left: 190px;
-top: 33%;
+top: 35%;
 z-index: 1;
 background: #FF881E;
 mix-blend-mode: darken;
@@ -103,7 +104,7 @@ animation: rondLeft_anim 2s ease-in;
 }
 
 @keyframes rondLeft_anim  {
-  0%{
+  0%{ 
     width: 30px;
     height: 30px;
   }
@@ -220,4 +221,23 @@ ion-button{
 p{
   color: rgb(199, 198, 198);
   font-size: 19px;
+}
+
+audio {
+/*border-radius: 90px;*/
+width: 250px;
+height: 45px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+audio::-webkit-media-controls-mute-button {
+display: none !important;
+color: red;
+background-color: yellow;
+}
+
+source{
+  background-color: red;
+  color: green;
 }

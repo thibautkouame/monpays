@@ -1,3 +1,56 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+  <ion-menu contentId="main" menuId="main-menu" side="start" type="overlay" [disabled]="!isMenuEnabled">
+    <ion-content>
+      <div class="conte" >
+        <p>Je suis un para <br> udciuhhcdhzieh <br> hdhedihaihdhaid <br>iheiheihdizhihed <br>ijedoijidiiedje</p>
+      </div>
+      <div class="main-list">
+      <ion-list>
+        <ion-menu-toggle>
+         <ion-item routerLink="/acceuil" lines="none">
+          <ion-icon name="planet-outline" class="acceuil_icon_menu"></ion-icon> <ion-label class="label_style">Accueil</ion-label>
+         </ion-item>  
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+         <ion-item routerLink="/parametre" lines="none">
+          <ion-icon name="settings-outline"></ion-icon> <ion-label class="label_style">Parametre</ion-label>
+         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+         <ion-item routerLink="/partager" lines="none">
+          <ion-icon name="share-outline"></ion-icon> <ion-label class="label_style">Partager</ion-label>
+         </ion-item>
+       </ion-menu-toggle>
+       <ion-menu-toggle>
+         <ion-item routerLink="/joindre"  lines="none">
+          <ion-icon name="call-outline"></ion-icon><ion-label class="label_style">Nous joindre</ion-label>
+         </ion-item>
+       </ion-menu-toggle>
+       <ion-menu-toggle>
+        <ion-item routerLink="/joindre" lines="none">
+          <ion-icon name="information-outline"></ion-icon><ion-label class="label_style">OnBoard</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+       <!-- <ion-menu-toggle>
+         <ion-item routerLink="/quitter"  lines="none" style="margin-top: 290px;">
+           <ion-icon name="planet-outline"></ion-icon><ion-label>Quitter</ion-label>
+         </ion-item>
+       </ion-menu-toggle> -->
+      </ion-list>
+ 
+      <!-- <ion-button fill="clear" color="dark" (click)="close()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button> -->
+      
+     </div>
+     
+    </ion-content>
+    <ion-menu-toggle>
+      <ion-item routerLink="/profil" (click)="quitter()" >
+        <ion-icon name="planet-outline"></ion-icon><ion-label>Quitter</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+ </ion-app>
+ 

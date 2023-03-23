@@ -1,0 +1,163 @@
+<ion-content>
+
+  <div class="bande">
+    <ion-icon name="arrow-back-outline" (click)="retouraumenuPrin()"></ion-icon>
+    <h4 class="salut">Salutations</h4>
+    <ul>
+      <li (click)="check_prononciation()"><ion-icon slot="start" name="language" class="con_" style="color: #ff8928;"></ion-icon></li>
+      <li (click)="check_definition()"><ion-icon slot="start" name="eye" class="con_" style="color: #ff8928;"></ion-icon></li>
+      <li (click)="refresh_()"><ion-icon slot="start" name="refresh" class="con_" style="color: #ff8928"></ion-icon></li>
+    </ul>
+  </div>
+
+  <div id="main_content">
+    <!-- <audio controls="true"src="../../assets/audios/reveil-7.mp3"></audio>
+    <audio controls="true"src="../../assets/audios/reveil-7.mp3"></audio>
+    <audio controls="true"src="../../assets/audios/reveil-7.mp3"></audio> -->
+
+    <h4 class="hhh4">La Matinée (06h-12h)</h4>
+    <div class="content_glb_card glb1">
+      <div class="content_card">
+        <img src="../../assets/images/userBkGirl.png" alt="" srcset="">
+        <div class="card_dissc">
+        <label for="" *ngIf="showPrononciation">Nja Ayin</label>
+        <audio controls controlsList="nodownload" class="aud" >
+          <source  src="../../assets/audios/njaayin_.mp3" type="audio/mpeg" *ngIf="ifsound">
+        </audio>
+        <h6 *ngIf="showDefinition" id="bjr">Bonjour</h6>
+      </div>
+      </div>
+
+      <div class="content_card card_gauche1">
+        <div class="card_dissc">
+        <label for="" *ngIf="showPrononciation">Nja Ayin oo</label>
+        <audio controls controlsList="nodownload" id="aud">
+          <source src="../../assets/audios/njaayinoo_.mp3" type="audio/mpeg" *ngIf="ifsound">
+        </audio>
+        <h6 *ngIf="showDefinition">Bien le bonjour</h6>
+      </div>
+      <img src="../../assets/images/userBkBoyWhite.png" alt="" srcset="">
+      </div>
+
+      <div class="content_card card_gauche2">
+        <img src="../../assets/images/userBkGirl.png" alt="" srcset="">
+        <div class="card_dissc">
+        <label for="" *ngIf="showPrononciation">Yètè oh nou</label>
+        <audio controls controlsList="nodownload" class="aud" id="son">
+          <source src="../../assets/audios/yeteonou_.mp3" type="audio/mpeg" *ngIf="ifsound">
+        </audio>
+        <h6 *ngIf="showDefinition">Au revoir</h6>
+      </div>
+      </div>
+
+    </div>
+
+    <h4 class="ppH4">La soirée (Dès 12h)</h4>
+    
+    <div class="content_glb_card glb2">
+      <div class="card2_global">
+        <div class="content_card">
+          <img src="../../assets/images/userBkGirl.png" alt="" srcset="">
+          <div class="card_dissc">
+          <label for="" *ngIf="showPrononciation">Nja anu</label>
+          <audio controls controlsList="nodownload" class="aud">
+            <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg" *ngIf="ifsound">
+          </audio>
+          <h6 *ngIf="showDefinition">Bonsoir</h6>
+        </div>
+        </div>
+  
+        <div class="content_card card_gauche1">
+          <div class="card_dissc">
+          <label for=""*ngIf="showPrononciation">Nja anu oo</label>
+          <audio controls controlsList="nodownload" class="aud">
+            <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg" *ngIf="ifsound">
+          </audio>
+          <h6 *ngIf="showDefinition">Bien le bonsoir</h6>
+        </div>
+        <img src="../../assets/images/userBkBoyWhite.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+
+    <ion-button (click)="onClic()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+    
+    
+  </div>
+
+  <!-- <div class="card_gl" >
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload" class="aud">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <h6>Desciption</h6>
+      <audio controls controlsList="nodownload">
+        <source src="../../assets/audios/reveil-7.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>  -->
+
+</ion-content>
